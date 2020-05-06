@@ -22,6 +22,7 @@ Sample Output 0
     #             print(ar)
 
 from sys import stdin
+
 x,y,z,n = map(int, stdin.readlines())
 
 if __name__ == '__main__':
