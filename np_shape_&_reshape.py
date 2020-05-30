@@ -66,9 +66,17 @@ Sample Output
  [7 8 9]]
  """
 
-import numpy
+import numpy as np
 
-a = input()
-a_ = numpy.array(format(a, ',d'))
-arr = (a_.reshape(3, 3))
-print(arr)
+a = list(input().replace(' ', ''))
+print(a)
+arr = np.array(a)
+a_ = (arr.reshape(3, 3))
+print(a_)
+
+
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+# newarr = arr.reshape(4, 3)
+
+# print(a_)
