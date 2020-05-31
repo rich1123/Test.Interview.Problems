@@ -69,14 +69,7 @@ Sample Output
 import numpy as np
 
 a = list(input().replace(' ', ''))
-print(a)
-arr = np.array(a)
+arr = np.asarray(a, int)
 a_ = (arr.reshape(3, 3))
 print(a_)
 
-
-# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
-
-# newarr = arr.reshape(4, 3)
-
-# print(a_)
