@@ -43,9 +43,10 @@ First, print the transpose array and then print the flatten.
 
 Sample Input
 
-2 2
+3 2
 1 2
 3 4
+1 3
 
 Sample Output
 
@@ -55,17 +56,24 @@ Sample Output
 """
 
 import numpy as np
-
-n = input()
-m = list(input().split())
-o = list(input().split())
-arr = np.array([m, o])
-a_ = np.asarray(arr, int)
-print(np.transpose(a_))
-print(a_.flatten())
-
-
-# my_array = np.array([[1,2,3],
-#                         [4,5,6]])
 #
-# print(my_array)
+# # n_m = np.asarray([input()], int)
+# n_m = np.array([input()])
+# n_ = np.asarray(n_m, int)
+# i = 0
+# while i <= n_[0]:
+#     input()
+#     i += 1
+#
+# m = list(input().split())
+# o = list(input().split())
+# arr = np.array([m, o])
+# a_ = np.asarray(arr, int)
+# print(np.transpose(a_))
+# print(a_.flatten())
+
+
+n, m = map(int, input().split())
+array = np.array([input().strip().split() for _ in range(n)], int)
+print (array.transpose())
+print (array.flatten())
